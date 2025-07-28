@@ -45,7 +45,7 @@ export function removeFromCart(productId) {
     // const newCart = [];
 
     const newCart = cart.filter((cartItem) => {
-        cartItem.productId !== productId
+        return cartItem.productId !== productId
     });
 
     cart = newCart;
